@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23172554'><path d='M12 2L2 9.5V20.5C2 21.0523 2.44772 21.5 3 21.5H21C21.5523 21.5 22 21.0523 22 20.5V9.5L12 2Z' fill='%23172554'/><path d='M9 13H15M9 16.5H15' stroke='white' stroke-width='1.5' stroke-linecap='round'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GharSahayak – Smart Digital Life Administration Platform for Indian Families. Keep important documents organized, track renewals, and share family responsibilities." />
+    <title>GharSahayak – Smart Digital Life Administration Platform</title>
+    <!-- Modern Enterprise Typography: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Immediate theme initializer to eliminate flash and apply dark mode class instantly -->
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('gharsahayak_theme');
+          var isDark = t === 'dark' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased font-sans transition-colors duration-200 selection:bg-indigo-100 selection:text-indigo-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
